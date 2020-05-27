@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
+}:read-only
 ol, ul {
 	list-style: none;
 }
@@ -63,6 +63,7 @@ h1 {
 	font-size: 50px;
 	text-overflow: inherit;
 	color: whitesmoke;
+	margin-left: 200px;
 }
 
 a {
@@ -76,27 +77,26 @@ a:hover {
 
 #header {
 	height: 150px;
-	/*background-image: url("img/bg.jpeg");*/
-	background-size: cover;
-	background-position-y:center;
+	background-image: url(img/logo-placeholder-png.png), url(img/bg.jpeg);
+	background-size: 150px, cover;
+	background-position-y:center, center;
+	background-repeat: no-repeat, no-repeat;
 	background-color:rgb(63, 99, 99);
 	color:white;
-	text-indent: 20px;
 	position: relative;
 	top: 0;
 	left:0;
 }
 
 #title {
-	position: absolute;
-	bottom: 20px;
+
 }
 
 @keyframes menuBgColor{
 	0% {
 	}
 	50% {
-		background-color: rgb(255, 7, 7);
+		background-color: red;
 	}
 	100% {
 
