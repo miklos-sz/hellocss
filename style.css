@@ -59,13 +59,6 @@ div {
 	width: 100%;
 }
 
-h1 {
-	font-size: 50px;
-	text-overflow: inherit;
-	color: whitesmoke;
-	margin-left: 200px;
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -77,19 +70,37 @@ a:hover {
 
 #header {
 	height: 150px;
+	position: relative;
+	top: 0;
+	left:0;
+	padding-left: 150px;
 	background-image: url(img/logo-placeholder-png.png), url(img/bg.jpeg);
 	background-size: 150px, cover;
 	background-position-y:center, center;
 	background-repeat: no-repeat, no-repeat;
 	background-color:rgb(63, 99, 99);
-	color:white;
-	position: relative;
-	top: 0;
-	left:0;
 }
 
-#title {
+#header h1 span{
+	position: relative;
+	top: 40px;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	font-size: 50px;
+	text-overflow: inherit;
+	color: whitesmoke;
+	background-color: black;
+}
 
+#header h2 span{
+	position: relative;
+	top: 40px;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	font-size: 25px;
+	text-overflow: inherit;
+	color: black;
+	background-color: #efefef;
 }
 
 @keyframes menuBgColor{
@@ -127,29 +138,41 @@ a:hover {
 	margin: 20px;
 }
 
+
+#content p {
+	display: block;
+	padding-bottom: 1em;
+}
+
 @keyframes imagefadein {
 	0%{opacity: 0;}
 	100% {visibility: visible;}
 }
 
-#content img {
+#picDiv {
 	animation-name: imagefadein;
 	animation-duration: 4s;
 	animation-iteration-count: initial;
 	width: 20rem;
 	float: left;
 	margin-right: 20px;
-	margin-bottom: 20px;
-	padding: 10px;
+	padding: 8px;
 	border-width: 1px;
 	border-color: gray;
 	border-style: solid;
-	
 }
 
-#content p {
-	padding-bottom: 1em;
+#picDiv img {
+width: 100%;
 }
+
+#content figcaption {
+	font-size: medium;
+	text-align: center;
+	margin-top: 8px;
+}
+
+
 
 #footer {
 	height: 60px;
